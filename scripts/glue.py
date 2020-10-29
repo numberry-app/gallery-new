@@ -2,7 +2,8 @@ import os
 import json
 
 sections = {
-	'stocks_': 'Stocks'
+	'stocks_': 'Stocks',
+  'crypto_': 'Crypto'
 }
 
 content = { 'sections': [] }
