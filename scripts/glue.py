@@ -21,6 +21,6 @@ for prefix, title in sections.items():
     'widgets': widgets
   })
 
-with open('../content/content.json', 'w') as content_file:
+with open('../content/content.json', 'w+') as content_file:
   json.dump(content, content_file)
 
