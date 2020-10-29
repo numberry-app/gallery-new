@@ -3,7 +3,8 @@ import json
 
 sections = {
 	'stocks_': 'Stocks',
-  'crypto_': 'Crypto'
+  'crypto_': 'Crypto',
+  'currencies_': 'Currencies'
 }
 
 content = { 'sections': [] }
