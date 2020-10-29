@@ -53,7 +53,7 @@ for ticker, name in top_25.items():
     'suffix': ''
   }
 
-  with open('../content/widgets/stocks_{}.json'.format(ticker), 'w+') as widget_file:
+  with open('../content/widgets/stocks_111_{}.json'.format(ticker), 'w+') as widget_file:
     json.dump(widget, widget_file)
 
 
@@ -83,7 +83,7 @@ widget['helpLinks'] = {
   'Ticker symbol': 'https://en.wikipedia.org/wiki/Ticker_symbol'
 }
 
-with open('../content/widgets/stocks_any.json', 'w+') as widget_file:
+with open('../content/widgets/stocks_111_any.json', 'w+') as widget_file:
   json.dump(widget, widget_file)
 
 
