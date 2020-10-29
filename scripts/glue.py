@@ -17,6 +17,7 @@ for prefix, title in sections.items():
 
   content['sections'].append({
     'title': title,
+    'icon': '',
     'widgets': widgets
   })
 
