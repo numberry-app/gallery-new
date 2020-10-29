@@ -57,5 +57,34 @@ for ticker, name in top_25.items():
     json.dump(widget, widget_file)
 
 
+#############################################################################################
+
+widget = default_widget
+widget['description'] = 'Track any popular stock price.'
+widget['value'] = ''
+
+url = '{}?symbol={}&interval=1m&limit=1'.format(endpoint, '{{ticker}}')
+
+widget['request']['url'] = url
+widget['request']['filter'] = '$[0][4]'
+
+widget['appearance'] = {
+  'title': 'Any stock',
+  'icon': 'chart.bar.fill',
+  'backgroundHex': 0xffffff,
+  'foregroundHex': 0x000000,
+  'prefix': '$',
+  'suffix': ''
+}
+
+widget['variables'] = ['ticker']
+widget['helpText'] = ['Specify official ticker for the stock you want to track price of.']
+widget['helpLinks'] = {
+  'Ticker symbol': 'https://en.wikipedia.org/wiki/Ticker_symbol'
+}
+
+with open('../content/widgets/stocks_any.json', 'w+') as widget_file:
+  json.dump(widget, widget_file)
+
 
 
