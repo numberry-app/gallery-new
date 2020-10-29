@@ -13,7 +13,7 @@ default_widget['request'] = {
   'authToken': '',
   'requestBodyType': 'json',
   'requestBody': '',
-  'requestBodyKeyValue': '',
+  'requestBodyKeyValue': dict(),
   'filterType': 'json',
   'filter': '',
   'variables': dict()
