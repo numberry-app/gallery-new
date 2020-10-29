@@ -78,7 +78,7 @@ widget['appearance'] = {
 }
 
 widget['variables'] = ['ticker']
-widget['helpText'] = ['Specify official ticker for the stock you want to track price of.']
+widget['helpText'] = 'Specify official ticker for the stock you want to track price of.'
 widget['helpLinks'] = {
   'Ticker symbol': 'https://en.wikipedia.org/wiki/Ticker_symbol'
 }
