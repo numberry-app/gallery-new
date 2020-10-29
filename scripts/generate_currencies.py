@@ -16,7 +16,7 @@ for pair in top_18:
 
   widget = default_widget
   widget['description'] = 'Track {} exchange rate according to the European Central Bank.'.format(pair)
-  widget['value'] = json.loads(requests.get(url).content)['rates'][c2]
+  widget['value'] = str(json.loads(requests.get(url).content)['rates'][c2])
 
   widget['request']['url'] = url
   widget['request']['filter'] = '$.rates.{}'.format(c2)
