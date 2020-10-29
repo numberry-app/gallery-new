@@ -7,7 +7,8 @@ from random_background import random_background
 top_18 = {
 	'USD/CAD', 'EUR/JPY', 'EUR/USD', 'EUR/CHF', 'USD/CHF', 'EUR/GBP',
   'GBP/USD', 'AUD/CAD', 'NZD/USD', 'GBP/CHF', 'AUD/USD', 'GBP/JPY',
-  'USD/JPY', 'CHF/JPY', 'EUR/CAD', 'AUD/JPY', 'EUR/AUD', 'AUD/NZD'
+  'USD/JPY', 'CHF/JPY', 'EUR/CAD', 'AUD/JPY', 'EUR/AUD', 
+  'AUD/NZD'
 }
 
 for pair in top_18:
