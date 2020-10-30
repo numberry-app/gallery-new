@@ -1,0 +1,35 @@
+{
+  "description": "Check if a website is down for everyone or just you.",
+  "value": "",
+  
+  "request": {
+    "url": "https://isitdown.site/api/v3/{{host}}",
+    "requestMethod": "get",
+    "headers": {},
+    "authType": "none",
+    "authUsername": "",
+    "authPassword": "",
+    "authToken": "",
+    "requestBodyType": "json",
+    "requestBody": "",
+    "requestBodyKeyValue": {},
+    "filterType": "json",
+    "filter": "$.isitdown",
+    "variables": {}
+  },
+  
+  "appearance": {
+    "title": "Is it down?",
+    "icon": "xmark.icloud.fill",
+    "backgroundHex": 15343655,
+    "foregroundHex": 16777215,
+    "prefix": "",
+    "suffix": ""
+  },
+
+  "variables": ["host"],
+  "helpText": "Specify the host you want to track being down or not, for example, google.com.",
+  "helpLinks": {
+    "isitdown.site": "https://isitdown.site/"
+  }
+}

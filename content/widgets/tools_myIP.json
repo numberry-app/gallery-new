@@ -1,9 +1,9 @@
 {
-  "description": "Track the number of views for any YouTube video.",
+  "description": "Track your current API address.",
   "value": "",
   
   "request": {
-    "url": "{{link}}",
+    "url": "https://api.ipify.org?format=json",
     "requestMethod": "get",
     "headers": {},
     "authType": "none",
@@ -13,29 +13,21 @@
     "requestBodyType": "json",
     "requestBody": "",
     "requestBodyKeyValue": {},
-    "filterType": "regex",
-    "filter": "\"shortViewCount\":\\{\"simpleText\":\"(.*) views\"\\}}}",
+    "filterType": "json",
+    "filter": "$.ip",
     "variables": {}
   },
   
   "appearance": {
-    "title": "YT views",
-    "icon": "eye.fill",
-    "backgroundHex": 15343655,
+    "title": "My IP",
+    "icon": "location.fill",
+    "backgroundHex": 1774692,
     "foregroundHex": 16777215,
     "prefix": "",
     "suffix": ""
   },
 
-  "variables": ["link"],
-  "helpText": "Specify link to the video you want to track the number of views for.",
+  "variables": [],
+  "helpText": "",
   "helpLinks": {}
 }
-
-
-
-
-
-
-
-

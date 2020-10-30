@@ -5,7 +5,8 @@ sections = {
   'social_': 'Social',
 	'stocks_': 'Stocks',
   'crypto_': 'Crypto',
-  'currencies_': 'Currencies'
+  'currencies_': 'Currencies',
+  'tools_': 'Tools'
 }
 
 content = { 'sections': [] }

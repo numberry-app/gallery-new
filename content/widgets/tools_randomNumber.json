@@ -1,0 +1,33 @@
+{
+  "description": "A random integer number.",
+  "value": "",
+  
+  "request": {
+    "url": "http://www.randomnumberapi.com/api/v1.0/random",
+    "requestMethod": "get",
+    "headers": {},
+    "authType": "none",
+    "authUsername": "",
+    "authPassword": "",
+    "authToken": "",
+    "requestBodyType": "json",
+    "requestBody": "",
+    "requestBodyKeyValue": {},
+    "filterType": "json",
+    "filter": "$[0]",
+    "variables": {}
+  },
+  
+  "appearance": {
+    "title": "Random",
+    "icon": "number.circle.fill",
+    "backgroundHex": 10734392,
+    "foregroundHex": 16777215,
+    "prefix": "",
+    "suffix": ""
+  },
+
+  "variables": [],
+  "helpText": "",
+  "helpLinks": {}
+}
