@@ -36,7 +36,7 @@ for code, name in top_25.items():
   url = 'https://www.binance.com/api/v3/ticker/price?symbol={}USDT'.format(code)
 
   widget = default_widget
-  widget['description'] = 'Track {} price.'.format(name)
+  widget['description'] = 'Track {} price according to Binance.'.format(name)
   widget['value'] = json.loads(requests.get(url).content)['price']
 
   widget['request']['url'] = url
@@ -67,7 +67,7 @@ widget['request']['url'] = url
 widget['request']['filter'] = '$.price'
 
 widget['appearance'] = {
-  'title': 'Any coin',
+  'title': 'Any* coin',
   'icon': 'chart.bar.fill',
   'backgroundHex': 0xffffff,
   'foregroundHex': 0x000000,

@@ -38,7 +38,7 @@ for ticker, name in top_25.items():
   url = '{}?symbol={}&interval=1m&limit=1'.format(endpoint, ticker)
 
   widget = default_widget
-  widget['description'] = 'Track {} stock price.'.format(name)
+  widget['description'] = 'Track {} stock price according to currency.com.'.format(name)
   widget['value'] = json.loads(requests.get(url).content)[0][4]
 
   widget['request']['url'] = url
@@ -60,7 +60,7 @@ for ticker, name in top_25.items():
 #############################################################################################
 
 widget = default_widget
-widget['description'] = 'Track any popular stock price.'
+widget['description'] = 'Track price of any stock listed on currency.com.'
 widget['value'] = ''
 
 url = '{}?symbol={}&interval=1m&limit=1'.format(endpoint, '{{ticker}}')
@@ -69,7 +69,7 @@ widget['request']['url'] = url
 widget['request']['filter'] = '$[0][4]'
 
 widget['appearance'] = {
-  'title': 'Any stock',
+  'title': 'Any* stock',
   'icon': 'chart.bar.fill',
   'backgroundHex': 0xffffff,
   'foregroundHex': 0x000000,

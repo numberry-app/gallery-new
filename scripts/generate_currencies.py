@@ -7,8 +7,7 @@ from random_background import random_background
 top_18 = {
 	'USD/CAD', 'EUR/JPY', 'EUR/USD', 'EUR/CHF', 'USD/CHF', 'EUR/GBP',
   'GBP/USD', 'AUD/CAD', 'NZD/USD', 'GBP/CHF', 'AUD/USD', 'GBP/JPY',
-  'USD/JPY', 'CHF/JPY', 'EUR/CAD', 'AUD/JPY', 'EUR/AUD', 
-  'AUD/NZD'
+  'USD/JPY', 'CHF/JPY', 'EUR/CAD', 'AUD/JPY', 'EUR/AUD', 'AUD/NZD'
 }
 
 for pair in top_18:
@@ -16,7 +15,7 @@ for pair in top_18:
   url = 'https://api.exchangeratesapi.io/latest?base={}&symbols={}'.format(c1, c2)
 
   widget = default_widget
-  widget['description'] = 'Track {} exchange rate according to the European Central Bank.'.format(pair)
+  widget['description'] = 'Track {} exchange rate according to the European Central Bank and provided by exchangeratesapi.io.'.format(pair)
   widget['value'] = str(json.loads(requests.get(url).content)['rates'][c2])
 
   widget['request']['url'] = url
@@ -38,7 +37,7 @@ for pair in top_18:
 #############################################################################################
 
 widget = default_widget
-widget['description'] = 'Track any exchange rate published by the European Central Bank.'
+widget['description'] = 'Track any exchange rate according to the European Central Bank and provided by exchangeratesapi.io.'
 widget['value'] = ''
 
 url = 'https://api.exchangeratesapi.io/latest?base={{currency1}}&symbols={{currency2}}'
@@ -47,7 +46,7 @@ widget['request']['url'] = url
 widget['request']['filter'] = '$.rates.{{currency2}}'
 
 widget['appearance'] = {
-  'title': 'Any rate',
+  'title': 'Any* rate',
   'icon': 'coloncurrencysign.circle.fill',
   'backgroundHex': 0xffffff,
   'foregroundHex': 0x000000,
