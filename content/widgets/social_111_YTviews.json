@@ -20,7 +20,7 @@
   
   "appearance": {
     "title": "YT views",
-    "icon": "person.fill",
+    "icon": "eye.fill",
     "backgroundHex": 15343655,
     "foregroundHex": 16777215,
     "prefix": "",

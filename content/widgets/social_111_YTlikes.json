@@ -14,13 +14,13 @@
     "requestBody": "",
     "requestBodyKeyValue": {},
     "filterType": "regex",
-    "filter": "\"defaultText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"\\d+,\\d+ likes\"}},\"simpleText\":\"([0-9,]+[a-zA-Z])\"}",
+    "filter": "\"defaultText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"\\d+,\\d+ likes\"}},\"simpleText\":\"([0-9,]+[a-zA-Z]{0,1})\"}",
     "variables": {}
   },
   
   "appearance": {
     "title": "YT likes",
-    "icon": "person.fill",
+    "icon": "hand.thumbsup.fill",
     "backgroundHex": 15343655,
     "foregroundHex": 16777215,
     "prefix": "",
