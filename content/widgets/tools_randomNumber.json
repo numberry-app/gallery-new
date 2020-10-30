@@ -13,8 +13,8 @@
     "requestBodyType": "json",
     "requestBody": "",
     "requestBodyKeyValue": {},
-    "filterType": "json",
-    "filter": "$",
+    "filterType": "regex",
+    "filter": "(.+)",
     "variables": {}
   },
   
