@@ -1,0 +1,41 @@
+{
+  "description": "Track the number of views for any YouTube video.",
+  "value": "",
+  
+  "request": {
+    "url": "{{link}}",
+    "requestMethod": "get",
+    "headers": {},
+    "authType": "none",
+    "authUsername": "",
+    "authPassword": "",
+    "authToken": "",
+    "requestBodyType": "json",
+    "requestBody": "",
+    "requestBodyKeyValue": {},
+    "filterType": "regex",
+    "filter": "\"shortViewCount\":\\{\"simpleText\":\"(.*) views\"\\}}}",
+    "variables": {}
+  },
+  
+  "appearance": {
+    "title": "YT views",
+    "icon": "person.fill",
+    "backgroundHex": 15343655,
+    "foregroundHex": 16777215,
+    "prefix": "",
+    "suffix": ""
+  },
+
+  "variables": ["link"],
+  "helpText": "Specify link to the video you want to track the number of views for.",
+  "helpLinks": {}
+}
+
+
+
+
+
+
+
+
