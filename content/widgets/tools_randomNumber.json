@@ -3,7 +3,7 @@
   "value": "",
   
   "request": {
-    "url": "http://www.randomnumberapi.com/api/v1.0/random",
+    "url": "https://www.random.org/integers/?num=1&min=1&max=100&col=1&base=10&format=plain&rnd=new",
     "requestMethod": "get",
     "headers": {},
     "authType": "none",
@@ -14,7 +14,7 @@
     "requestBody": "",
     "requestBodyKeyValue": {},
     "filterType": "json",
-    "filter": "$[0]",
+    "filter": "$",
     "variables": {}
   },
   
