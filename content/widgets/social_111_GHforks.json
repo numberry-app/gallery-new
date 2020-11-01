@@ -20,7 +20,7 @@
   
   "appearance": {
     "title": "GH forks",
-    "icon": "tuningfork",
+    "icon": "arrow.branch",
     "backgroundHex": 3355443,
     "foregroundHex": 16777215,
     "prefix": "",
