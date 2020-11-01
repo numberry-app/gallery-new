@@ -1,0 +1,33 @@
+{
+  "description": "Track the number of followers for any Instagram user.",
+  "value": "",
+  
+  "request": {
+    "url": "https://instagram.com/{{username}}",
+    "requestMethod": "get",
+    "headers": {},
+    "authType": "none",
+    "authUsername": "",
+    "authPassword": "",
+    "authToken": "",
+    "requestBodyType": "json",
+    "requestBody": "",
+    "requestBodyKeyValue": {},
+    "filterType": "regex",
+    "filter": "\"edge_followed_by\":\\{\"count\":([0-9]+)\\}",
+    "variables": {}
+  },
+  
+  "appearance": {
+    "title": "IG followers",
+    "icon": "person.fill",
+    "backgroundHex": 11875441,
+    "foregroundHex": 16777215,
+    "prefix": "",
+    "suffix": ""
+  },
+
+  "variables": ["username"],
+  "helpText": "Specify username for the user you want to track the number of followers for.",
+  "helpLinks": {}
+}

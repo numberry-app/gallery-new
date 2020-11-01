@@ -2,6 +2,7 @@ import os
 import json
 
 sections = {
+  'featured_': 'Featured',
   'social_': 'Social',
 	'stocks_': 'Stocks',
   'crypto_': 'Crypto',

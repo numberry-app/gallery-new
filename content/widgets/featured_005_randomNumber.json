@@ -1,0 +1,33 @@
+{
+  "description": "A random integer number between 1 and 100.",
+  "value": "",
+  
+  "request": {
+    "url": "https://www.random.org/integers/?num=1&min=1&max=100&col=1&base=10&format=plain&rnd=new",
+    "requestMethod": "get",
+    "headers": {},
+    "authType": "none",
+    "authUsername": "",
+    "authPassword": "",
+    "authToken": "",
+    "requestBodyType": "json",
+    "requestBody": "",
+    "requestBodyKeyValue": {},
+    "filterType": "regex",
+    "filter": "(.+)",
+    "variables": {}
+  },
+  
+  "appearance": {
+    "title": "Random",
+    "icon": "number.circle.fill",
+    "backgroundHex": 10734392,
+    "foregroundHex": 16777215,
+    "prefix": "",
+    "suffix": ""
+  },
+
+  "variables": [],
+  "helpText": "",
+  "helpLinks": {}
+}
