@@ -20,7 +20,7 @@
   
   "appearance": {
     "title": "GH watchers",
-    "icon": "person.fill",
+    "icon": "eye.fill",
     "backgroundHex": 3355443,
     "foregroundHex": 16777215,
     "prefix": "",
