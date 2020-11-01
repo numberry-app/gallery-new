@@ -1,0 +1,35 @@
+{
+  "description": "Track the number of watchers for any public GitHub repo.",
+  "value": "",
+  
+  "request": {
+    "url": "https://api.github.com/repos/{{owner}}/{{repo}}",
+    "requestMethod": "get",
+    "headers": {},
+    "authType": "none",
+    "authUsername": "",
+    "authPassword": "",
+    "authToken": "",
+    "requestBodyType": "json",
+    "requestBody": "",
+    "requestBodyKeyValue": {},
+    "filterType": "json",
+    "filter": "$.watchers_count",
+    "variables": {}
+  },
+  
+  "appearance": {
+    "title": "GH watchers",
+    "icon": "person.fill",
+    "backgroundHex": 3355443,
+    "foregroundHex": 16777215,
+    "prefix": "",
+    "suffix": ""
+  },
+
+  "variables": ["owner", "repo"],
+  "helpText": "Specify owner and repo for the repository you want to track the number of watchers for.",
+  "helpLinks": {
+    "GitHub API docs": "https://docs.github.com/en/free-pro-team@latest/rest/reference/repos"
+  }
+}

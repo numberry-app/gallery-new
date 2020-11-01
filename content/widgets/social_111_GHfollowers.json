@@ -1,0 +1,35 @@
+{
+  "description": "Track the number of followers for any GitHub user.",
+  "value": "",
+  
+  "request": {
+    "url": "https://api.github.com/users/{{username}}",
+    "requestMethod": "get",
+    "headers": {},
+    "authType": "none",
+    "authUsername": "",
+    "authPassword": "",
+    "authToken": "",
+    "requestBodyType": "json",
+    "requestBody": "",
+    "requestBodyKeyValue": {},
+    "filterType": "json",
+    "filter": "$.followers",
+    "variables": {}
+  },
+  
+  "appearance": {
+    "title": "GH followers",
+    "icon": "person.fill",
+    "backgroundHex": 3355443,
+    "foregroundHex": 16777215,
+    "prefix": "",
+    "suffix": ""
+  },
+
+  "variables": ["username"],
+  "helpText": "Specify username for the user you want to track the number of followers for.",
+  "helpLinks": {
+    "GitHub API docs": "https://docs.github.com/en/free-pro-team@latest/rest/reference/users"
+  }
+}
