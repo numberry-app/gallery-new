@@ -19,7 +19,7 @@
   },
   
   "appearance": {
-    "title": "GitHub forks",
+    "title": "GH forks",
     "icon": "person.fill",
     "backgroundHex": 3355443,
     "foregroundHex": 16777215,

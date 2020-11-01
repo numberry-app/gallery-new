@@ -13,13 +13,13 @@
     "requestBodyType": "json",
     "requestBody": "",
     "requestBodyKeyValue": {},
-    "filterType": "css",
-    "filter": "#overview > div.row > div:nth-child(4) > table > tbody > tr:nth-child(2) > td:nth-child(2)",
+    "filterType": "regex",
+    "filter": "Followers<\\\/td>[\\r\\n\\s]+<td>([0-9,]+)",
     "variables": {}
   },
   
   "appearance": {
-    "title": "Twitter followers",
+    "title": "Twi followers",
     "icon": "person.fill",
     "backgroundHex": 1231812,
     "foregroundHex": 16777215,
