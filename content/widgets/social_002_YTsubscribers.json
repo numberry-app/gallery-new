@@ -1,0 +1,38 @@
+{
+  "description": "Track the number of subscribers for any YouTube channel.",
+  "value": "",
+  
+  "request": {
+    "url": "{{link}}/about",
+    "requestMethod": "get",
+    "headers": {},
+    "authType": "none",
+    "authUsername": "",
+    "authPassword": "",
+    "authToken": "",
+    "requestBodyType": "json",
+    "requestBody": "",
+    "requestBodyKeyValue": {},
+    "filterType": "regex",
+    "filter": "\"subscriberCountText\":\\{\"simpleText\":\"(.*) subscribers\"\\}",
+    "variables": {}
+  },
+  
+  "appearance": {
+    "title": "YouTube subscribers",
+    "icon": "person.fill",
+    "backgroundHex": 15343655,
+    "foregroundHex": 16777215,
+    "prefix": "",
+    "suffix": ""
+  },
+
+  "variables": ["link"],
+  "helpText": "Specify link to the channel you want to track the number of followers for.",
+  "helpLinks": {}
+}
+
+
+
+
+

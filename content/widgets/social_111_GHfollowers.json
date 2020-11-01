@@ -19,7 +19,7 @@
   },
   
   "appearance": {
-    "title": "GH followers",
+    "title": "GitHub followers",
     "icon": "person.fill",
     "backgroundHex": 3355443,
     "foregroundHex": 16777215,

@@ -1,5 +1,5 @@
 {
-  "description": "Track the number of subscribers for any YouTube channel.",
+  "description": "Track the total number of views for any YouTube channel.",
   "value": "",
   
   "request": {
@@ -14,13 +14,13 @@
     "requestBody": "",
     "requestBodyKeyValue": {},
     "filterType": "regex",
-    "filter": "\"subscriberCountText\":\\{\"simpleText\":\"(.*) subscribers\"\\}",
+    "filter": "\"viewCountText\":\\{\"simpleText\":\"(.*) views\"\\}",
     "variables": {}
   },
   
   "appearance": {
-    "title": "YT subscribers",
-    "icon": "person.fill",
+    "title": "YouTube total views",
+    "icon": "eye.fill",
     "backgroundHex": 15343655,
     "foregroundHex": 16777215,
     "prefix": "",
@@ -28,7 +28,7 @@
   },
 
   "variables": ["link"],
-  "helpText": "Specify link to the channel you want to track the number of followers for.",
+  "helpText": "Specify link to the channel you want to track the total number of views for.",
   "helpLinks": {}
 }
 
